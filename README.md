@@ -8,7 +8,7 @@ Taking the controller that is created by Steve Sloka, I made a basic sample by c
 
 xds-server: https://github.com/stevesloka/envoy-xds-server
 
-There is just a basic docker-compose file.
+There is just a basic docker-compose file. I have created images xdsserver and envoyproxy and pushed to the Docker Hub.
 
 # Start
 
