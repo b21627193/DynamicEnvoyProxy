@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  xdsserver:
+    image: dockerer1212/my_first_repo:xdsserver_v1.1
+    networks:
+      mybr:
+        ipv4_address: 172.10.0.2
+  envoyproxy:
+    image: dockerer1212/my_first_repo:envoyproxy
+    networks:
+      mybr:
+        ipv4_address: 172.10.0.3
+networks:
+  mybr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.10.0.0/16
+          
